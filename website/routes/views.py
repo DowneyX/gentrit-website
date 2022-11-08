@@ -20,6 +20,16 @@ def contact():
     return render_template('contact.html')
 
 
+@views.route('/onze-diensten')
+def our_services():
+    return render_template('our_services.html')
+
+
+@views.route('/over-ons')
+def about_us():
+    return render_template('about_us.html')
+
+
 #################
 # create routes #
 #################

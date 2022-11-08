@@ -12,7 +12,7 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    redirect(url_for('views.home'))
+    pass
 
     # check if user is already logged in
 
@@ -29,8 +29,7 @@ def login():
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def signup():
-
-    redirect(url_for('views.home'))
+    pass
 
     # check if user is already logged in
 
@@ -52,7 +51,7 @@ def signup():
 def logout():
     flash("Gebruiker uitgelogd")
     logout_user()
-    # return redirect(url_for('views.home'))
+    return redirect(url_for('views.home'))
 
 
 @login_required
